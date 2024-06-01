@@ -1,5 +1,99 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-gdamore-tcell.v2 (2.6.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 2.6.0
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Robin Jarry <robin@jarry.cc>  Sat, 17 Jun 2023 15:53:46 +0000
+
+golang-github-gdamore-tcell.v2 (2.5.4-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 2.5.4
+  * Change Section from devel to golang
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Update versioned dependencies as per go.mod
+    and remove unneeded dependency on golang-github-smartystreets-goconvey-dev
+  * Bump Standards-Version to 4.6.2 (no change)
+  * Mark library package with "Multi-Arch: foreign"
+  * Invoke dh with --builddirectory=_build
+
+ -- Anthony Fok <foka@debian.org>  Thu, 26 Jan 2023 03:15:57 -0700
+
+golang-github-gdamore-tcell.v2 (2.5.3-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
+
+  [ Stephen Gelman ]
+  * Add missing build dep on golang-golang-x-term-dev to fix FTBFS
+
+ -- Stephen Gelman <ssgelm@debian.org>  Tue, 10 Jan 2023 17:38:37 -0600
+
+golang-github-gdamore-tcell.v2 (2.5.3-1) unstable; urgency=medium
+
+  [ Daniel Milde ]
+  * standards bumped to 4.6.0
+
+  [ Robin Jarry ]
+  * New upstream version 2.5.3
+  * standards bumped to 4.6.1
+
+ -- Robin Jarry <robin@jarry.cc>  Fri, 16 Sep 2022 09:16:14 +0200
+
+golang-github-gdamore-tcell.v2 (2.4.0-2) unstable; urgency=medium
+
+  * added d/gbp.conf
+
+ -- Daniel Milde <daniel@milde.cz>  Mon, 11 Oct 2021 11:35:27 +0200
+
+golang-github-gdamore-tcell.v2 (2.4.0-1) unstable; urgency=medium
+
+  * New upstream version 2.4.0
+
+ -- Daniel Milde <daniel@milde.cz>  Mon, 04 Oct 2021 22:59:19 +0200
+
+golang-github-gdamore-tcell.v2 (2.2.0-1) unstable; urgency=medium
+
+  * New upstream version 2.2.0
+
+ -- Daniel Milde <daniel@milde.cz>  Thu, 04 Mar 2021 23:13:32 +0100
+
+golang-github-gdamore-tcell.v2 (2.1.0-5) unstable; urgency=medium
+
+  * Team upload.
+  * Fix Go-Import-Path:
+     + golang-github-gdamore-tcell.v2-dev = github.com/gdamore/tcell/v2
+     + golang-github-gdamore-tcell-dev = github.com/gdamore/tcell
+  * Drop Breaks and Replaces against golang-github-gdamore-tcell-dev, as
+    they ship files in different directories, meaning they are actually
+    co-installable.
+
+ -- Cyril Brulebois <cyril@debamax.com>  Wed, 03 Feb 2021 02:03:50 +0000
+
+golang-github-gdamore-tcell.v2 (2.1.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * Make package break and replace golang-github-gdamore-tcell-dev
+
+ -- Stephen Gelman <ssgelm@debian.org>  Tue, 02 Feb 2021 01:43:24 -0600
+
+golang-github-gdamore-tcell.v2 (2.1.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Set correct vcs path in control
+
+ -- Stephen Gelman <ssgelm@debian.org>  Tue, 02 Feb 2021 01:33:41 -0600
+
+golang-github-gdamore-tcell.v2 (2.1.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Re-upload as source-only
+
+ -- Stephen Gelman <ssgelm@debian.org>  Tue, 02 Feb 2021 01:27:34 -0600
+
+golang-github-gdamore-tcell.v2 (2.1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: 980863)
+
+ -- Daniel Milde <daniel@milde.cz>  Thu, 21 Jan 2021 15:55:44 -0500
